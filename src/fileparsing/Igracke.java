@@ -11,7 +11,7 @@ public class Igracke {
 		Scanner in = new Scanner(System.in);
 		System.out.println("Unesite naziv fajla za ucitavanje igracaka: ");
 		String nazivFajla = in.next();
-		
+		in.close();
 		try {
 			spisak.readFromFile(nazivFajla);
 		} catch (IOException e) {
